@@ -1,3 +1,9 @@
 <h1>Server Component Here</h1>
-<button mat-raised-button color="warn" [disabled]=!makeEnable>Click</button>
+<label>Update</label>
+<p>{{serverName}}</p>
+<input type="text" [(ngModel)]="serverName">
+<input type="text" (input)="onUpdateServer($event)">
+<p [innerText]="serverComponentStatus"></p>
+<button mat-raised-button color="warn" [disabled]=!makeEnable (click)="onCreateServer()">Click</button>
 <button mat-raised-button color="primary">Primary</button>
+<p *ngFor="let i of servers ">"Sajib"</p>
