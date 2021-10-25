@@ -8,7 +8,7 @@ export  class serverComponent{
   makeEnable = false;
   serverComponentStatus = "No server is not created";
   serverName='';
-  servers =['1','2','3'];
+  servers =['1','2','3','4','5','6'];
   constructor() {
     setTimeout(()=>{
       this.makeEnable=true;

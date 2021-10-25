@@ -1,0 +1,11 @@
+.table_cls{
+    width: 100vw;
+}
+.recipe_list_detail1,.recipe_list_detail2{
+    text-align: center;
+    border-color: black;
+    border:solid;
+    padding: 5%;
+    margin:2%;
+    width: 50vw;
+}
