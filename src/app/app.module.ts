@@ -16,7 +16,15 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
+const appRoutes:Routes =[
+  {path:'recipes',component:RecipesComponent},
+  {path:'shopping-list',component:ShoppingListComponent},
+  {path:'**',component:NotFoundPageComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +43,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    RouterModule.forRoot(appRoutes)
 
   ],
   providers: [],
