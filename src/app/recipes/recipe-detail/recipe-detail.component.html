@@ -1,1 +1,10 @@
-<p>recipe-detail works!</p>
+<form (ngSubmit)="onSubmit(f)" #f>
+    <label>First name:</label><br>
+    <input type="text" name="fname" ngModel><br>
+    <label>Last name:</label><br>
+    <input type="text" name="lname" ngModel><br>
+    <label>Email</label><br>
+    <input type="email" name="email" required email ngModel>
+    <br><br>
+    <input type="submit" value="Submit">
+</form> 

@@ -11,5 +11,9 @@ export class RecipeDetailComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onSubmit(form:HTMLElement)
+  {
+    console.log(form);
+    console.log("Submitted");
+  }
 }
