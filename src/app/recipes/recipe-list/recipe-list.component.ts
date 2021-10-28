@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeListComponent implements OnInit {
 
+  check="Custom Pipe checking";
   constructor() { }
 
   ngOnInit(): void {

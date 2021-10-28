@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-recipe-detail',
@@ -11,7 +12,7 @@ export class RecipeDetailComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onSubmit(form:HTMLElement)
+  onSubmit(form:NgForm)
   {
     console.log(form);
     console.log("Submitted");

@@ -19,6 +19,8 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { CustomPipe } from './custom_pipe.pipe';
+
 
 const appRoutes:Routes =[
   {path:'recipes',component:RecipesComponent},
@@ -35,15 +37,16 @@ const appRoutes:Routes =[
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    RecipeDetailComponent
+    RecipeDetailComponent,
+    CustomPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
 
   ],
   providers: [],
