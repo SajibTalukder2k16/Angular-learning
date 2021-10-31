@@ -1,3 +1,19 @@
 <p>recipe-list works!</p>
 <p>Before: {{check}}</p>
 <p>After: {{check|custom}}</p>
+<div style="background-color:azure;border-color: black;border-radius: 5px;">
+    <a href="#" *ngFor="let recipe of recipes" >
+        <div style="height: 150px;width: 150px;">
+            <span>
+                <p>{{recipe.name}}</p>
+                <p>{{recipe.description}}</p>
+            </span>
+            <span >
+                <img [src]="recipe.imagePath" alt={{recipe.imagePath}} style="max-height: 100px;max-width: 100px;">
+            </span>
+        </div>
+        <hr>
+    </a>
+
+</div>
+<app-recipe-item></app-recipe-item>
