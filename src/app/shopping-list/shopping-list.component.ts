@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Ingredient } from '../shared/ingredients.model';
 
 @Component({
   selector: 'app-shopping-list',
@@ -7,6 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {
+  ingredients:Ingredient[]=[
+    new Ingredient('Apple',10),
+    new Ingredient('Orange',20)
+  ];
 
   constructor(private router:Router) { }
 

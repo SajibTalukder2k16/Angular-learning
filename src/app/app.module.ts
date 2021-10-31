@@ -23,6 +23,7 @@ import { CustomPipe } from './custom_pipe.pipe';
 
 
 const appRoutes:Routes =[
+  {path:'1',component:HeaderComponent},
   {path:'recipes',component:RecipesComponent},
   {path:'shopping-list',component:ShoppingListComponent},
   {path:'**',component:NotFoundPageComponent}
