@@ -1,5 +1,7 @@
 <div>
-    <h1>Recipe Name</h1>
+    <h1>{{recipe.name}}</h1>
+    <img [src]="recipe.imagePath" alt="recipe.name" style="height: 200px;width: 200px;">
+    <h3>{{recipe.description}}</h3>
     <div>
         <button class="dropdown-toggle">Manage Recipe <span class="caret"></span></button>
         <ul class="dropdown-menu">
