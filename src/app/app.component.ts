@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-learning';
+  loadedfeature='recipe';
+  onNavigate(feature:string)
+  {
+    //console.log("F: ",feature);
+    this.loadedfeature=feature;
+  }
 }

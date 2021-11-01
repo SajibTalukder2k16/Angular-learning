@@ -19,6 +19,7 @@ export class ShoppingListComponent implements OnInit {
   }
   OnclickRecipe()
   {
+    console.log("sajib")
     this.router.navigate(['/recipes']);
   }
 

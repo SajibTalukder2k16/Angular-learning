@@ -20,10 +20,11 @@ import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { CustomPipe } from './custom_pipe.pipe';
+import { RootComComponent } from './root-com/root-com.component';
 
 
 const appRoutes:Routes =[
-  {path:'1',component:HeaderComponent},
+  {path:'',component:AppComponent},
   {path:'recipes',component:RecipesComponent},
   {path:'shopping-list',component:ShoppingListComponent},
   {path:'**',component:NotFoundPageComponent}
@@ -39,7 +40,8 @@ const appRoutes:Routes =[
     ShoppingListComponent,
     ShoppingEditComponent,
     RecipeDetailComponent,
-    CustomPipe
+    CustomPipe,
+    RootComComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +53,6 @@ const appRoutes:Routes =[
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [RootComComponent]
 })
 export class AppModule { }
