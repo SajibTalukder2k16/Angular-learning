@@ -6,19 +6,4 @@
 </div>
 <br>
 <br>
-<div style="background-color:azure;border-color: black;border-radius: 5px;">
-    <a href="#" *ngFor="let recipe of recipes" >
-        <div style="height: 150px;width: 150px;">
-            <span>
-                <p>{{recipe.name}}</p>
-                <p>{{recipe.description}}</p>
-            </span>
-            <span >
-                <img [src]="recipe.imagePath" alt={{recipe.imagePath}} style="max-height: 100px;max-width: 100px;">
-            </span>
-        </div>
-        <hr>
-    </a>
-
-</div>
-<app-recipe-item></app-recipe-item>
+<app-recipe-item *ngFor="let recipeEle of recipes" [recipe]="recipeEle"></app-recipe-item>
