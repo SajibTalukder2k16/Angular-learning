@@ -19,8 +19,14 @@ export class ShoppingListComponent implements OnInit {
   }
   OnclickRecipe()
   {
-    console.log("sajib")
+    //console.log("sajib")
     this.router.navigate(['/recipes']);
+  }
+  onAdded(ingredient:Ingredient)
+  {
+    //console.log("Hellos")
+    this.ingredients.push(ingredient);
+    //console.log(this.ingredients.length);
   }
 
 }

@@ -21,6 +21,7 @@ import { RouterModule } from '@angular/router';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { CustomPipe } from './custom_pipe.pipe';
 import { RootComComponent } from './root-com/root-com.component';
+import { DropDownDirective } from './shared/dropdown.directive';
 
 
 const appRoutes:Routes =[
@@ -41,7 +42,8 @@ const appRoutes:Routes =[
     ShoppingEditComponent,
     RecipeDetailComponent,
     CustomPipe,
-    RootComComponent
+    RootComComponent,
+    DropDownDirective
   ],
   imports: [
     BrowserModule,

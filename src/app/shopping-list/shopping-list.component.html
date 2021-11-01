@@ -5,14 +5,24 @@
 <hr>
 <button (click)="OnclickRecipe()">Recipe</button>
 <hr>
-<a href="" *ngFor="let ingredient of ingredients">
-    <div>
-        {{ingredient.name}}
-        {{ingredient.amount}}
-    </div>
+<table>
+    <tr>
+        <td style="width:75px;margin-right: 20px;">Incredients name</td>
+        <td style="width:75px;text-align: right;">Incredients Amount</td>
+    </tr>
+</table>
+<a *ngFor="let ingredient of ingredients">
+    <table>
+        <tr>
+                <td style="width:75px;">{{ingredient.name}}</td>
+                <td style="width:75px; text-align: right;">{{ingredient.amount}}</td>
+        </tr>
+
+    </table>
 </a>
+
 <hr>
 <hr>
-<app-shopping-edit></app-shopping-edit>
+<app-shopping-edit (ingredientsAdded)="onAdded($event)"></app-shopping-edit>
 
 

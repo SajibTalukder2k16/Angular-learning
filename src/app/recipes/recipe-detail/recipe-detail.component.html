@@ -2,19 +2,37 @@
     <h1>{{recipe.name}}</h1>
     <img [src]="recipe.imagePath" alt="recipe.name" style="height: 200px;width: 200px;">
     <h3>{{recipe.description}}</h3>
-    <div>
-        <button class="dropdown-toggle">Manage Recipe <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-            <li><a href="#">Shopping list</a></li>
-            <li><a href="#">Edit Recipe</a></li>
-            <li><a href="#">Delete Recipe</a></li>
-        </ul>
-    </div>
+
+    
+      
+          <div  class="btn-group open" >
+              <button class="btn btn-primary dropdown-toggle" type="button"  >Manage Recipe <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                  <li><a href="#">Shopping list</a></li>
+                  <li><a href="#">Edit Recipe</a></li>
+                  <li><a href="#">Delete Recipe</a></li>
+              </ul>
+          </div>
+
+      
     <div>description</div>
 </div>
 <hr>
 <br>
 <br>
+<!--
+    <div class="dropdown" appDropDown>
+        <button class="btn btn-primary dropdown-toggle"  type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </div>
+
+-->
+
 <br>
 <br>
 <hr>
