@@ -16,20 +16,12 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
-import { Routes } from '@angular/router';
-import { RouterModule } from '@angular/router';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { CustomPipe } from './custom_pipe.pipe';
 import { RootComComponent } from './root-com/root-com.component';
 import { DropDownDirective } from './shared/dropdown.directive';
 
 
-const appRoutes:Routes =[
-  {path:'',component:AppComponent},
-  {path:'recipes',component:RecipesComponent},
-  {path:'shopping-list',component:ShoppingListComponent},
-  {path:'**',component:NotFoundPageComponent}
-];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +42,6 @@ const appRoutes:Routes =[
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    RouterModule.forRoot(appRoutes),
     FormsModule,
 
   ],
