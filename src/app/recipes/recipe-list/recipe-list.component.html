@@ -6,4 +6,4 @@
 </div>
 <br>
 <br>
-<app-recipe-item *ngFor="let recipeEle of recipes" [recipe]="recipeEle" (recipeSelected)="onRecipeSelected(recipeEle)"></app-recipe-item>
+<app-recipe-item *ngFor="let recipeEle of recipes; let i=index" [index]="i" [recipe]="recipeEle" (recipeSelected)="onRecipeSelected(recipeEle)"></app-recipe-item>

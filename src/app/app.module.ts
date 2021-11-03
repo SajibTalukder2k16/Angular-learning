@@ -19,6 +19,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { CustomPipe } from './custom_pipe.pipe';
 import { RootComComponent } from './root-com/root-com.component';
 import { DropDownDirective } from './shared/dropdown.directive';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 
 
@@ -35,7 +36,8 @@ import { DropDownDirective } from './shared/dropdown.directive';
     RecipeDetailComponent,
     CustomPipe,
     RootComComponent,
-    DropDownDirective
+    DropDownDirective,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,

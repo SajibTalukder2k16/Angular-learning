@@ -1,4 +1,4 @@
-
+<app-header></app-header>
 <table>
     <div class="table_cls">
         <tr>
@@ -10,11 +10,16 @@
             </td>
             <td>
                 <div class="recipe_list_detail1">
-                    <app-recipe-detail *ngIf="selectedRecipe; else InfoText" [recipe]="selectedRecipe"></app-recipe-detail>
-                    <ng-template #InfoText>
-                        <p>Recipe not Selected</p>
-                    </ng-template>
+                    <router-outlet></router-outlet>
                 </div>
+                <!--
+                    
+                        <app-recipe-detail *ngIf="selectedRecipe; else InfoText" [recipe]="selectedRecipe"></app-recipe-detail>
+                        <ng-template #InfoText>
+                            <p>Recipe not Selected</p>
+                        </ng-template>
+
+                -->
             </td>
             
         </tr>
