@@ -1,6 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
 
@@ -14,7 +14,7 @@ export class RecipeDetailComponent implements OnInit {
   rec!:Recipe
   id!:number
 
-  constructor(private recipeService:RecipeService,private activatedRoute:ActivatedRoute) { }
+  constructor(private recipeService:RecipeService,private activatedRoute:ActivatedRoute,private router:Router) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(
@@ -28,5 +28,10 @@ export class RecipeDetailComponent implements OnInit {
   {
     console.log(form);
     console.log("Submitted");
+  }
+  OnclickEdit()
+  {
+    //this.router.navigate(['edit'],{relativeTo:this.activatedRoute})
+    this.router.navigate(['../',this.id,'edit'],{relativeTo:this.activatedRoute});
   }
 }

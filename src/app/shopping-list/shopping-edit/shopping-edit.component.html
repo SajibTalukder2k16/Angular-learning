@@ -1,15 +1,17 @@
 <p>shopping-edit works!</p>
-<label>Name </label>
-<br>
-<input type="text" #nameInput>
-<br>
-<label>Amount </label>
-<br>
-<input type="number" #amountInput>
-<br>
-<br>
-<button (click)="onAddItem()">Add</button>
-<button>Delete</button>
-<button>CLear</button>
+<form (ngSubmit)="onAddItem(f)" #f="ngForm">
+    <label>Name </label>
+    <br>
+    <input type="text" name="name" ngModel>
+    <br>
+    <label>Amount </label>
+    <br>
+    <input type="number" name="amount" ngModel>
+    <br>
+    <br>
+    <button>Add</button>
+    <button>Delete</button>
+    <button>CLear</button>
+</form>
 
 
