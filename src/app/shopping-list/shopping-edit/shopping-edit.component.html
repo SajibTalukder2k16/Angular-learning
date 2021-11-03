@@ -2,14 +2,14 @@
 <form (ngSubmit)="onAddItem(f)" #f="ngForm">
     <label>Name </label>
     <br>
-    <input type="text" name="name" ngModel>
+    <input type="text" name="name" ngModel required>
     <br>
     <label>Amount </label>
     <br>
-    <input type="number" name="amount" ngModel>
+    <input type="number" name="amount" ngModel required pattern="^[1-9]+[0-9]*$">
     <br>
     <br>
-    <button>Add</button>
+    <button [disabled]="!f.valid" >Add</button>
     <button>Delete</button>
     <button>CLear</button>
 </form>
